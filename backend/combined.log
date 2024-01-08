@@ -1,0 +1,10 @@
+{"level":"error","message":"Cannot destructure property 'page' of 'request.body' as it is undefined.","service":"user-service"}
+{"level":"error","message":"Cannot destructure property 'page' of 'request.body' as it is undefined.","service":"user-service"}
+{"level":"error","message":"this.userService.getAllUsers is not a function","service":"user-service"}
+{"level":"info","message":"Sucessful","service":"user-service"}
+info: Sucessful {"service":"user-service"}
+undefined
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T02:31:36.810Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T02:32:03.571Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T02:32:14.913Z"}
+error: BSON field 'skip' value must be >= 0, actual value '-80' {"service":"user-service","timestamp":"2024-01-08T02:32:44.514Z"}

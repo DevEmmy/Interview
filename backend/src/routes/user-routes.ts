@@ -14,6 +14,6 @@ router.post("/reset-password", (req: Request, res: Response)=> userController.re
 router.get("/:id", verifyAuth,(req: Request, res: Response)=> userController.getUserById(req, res))
 router.delete("/:id", verifyAuth, (req: Request, res: Response)=> userController.deleteUser(req, res))
 router.patch("/id", verifyAuth, (req: Request, res: Response)=> userController.update(req, res))
-router.get("/", verifyAuth, (req: Request, res: Response)=> userController.getAllUsers(req, res))
+router.post("/", (req: Request, res: Response)=> userController.getAllUsers(req, res))
 
 export default router

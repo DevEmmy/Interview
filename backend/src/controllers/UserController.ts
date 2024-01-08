@@ -3,6 +3,7 @@ import UserServices from "../services/UserServices";
 import { IResult, error, success } from "../utils/returnResponses";
 import { Service } from "typedi";
 import "reflect-metadata"
+import logger from "../utils/logger";
 
 @Service()
 class UserController {
@@ -15,6 +16,7 @@ class UserController {
             
             let {email, password} = request.body;
             let result: IResult = await this.userService.signUp(email, password)
+            logger.info(result.message)
             success(result, response)
         }
         catch(err : any){
@@ -27,9 +29,11 @@ class UserController {
         try{
             let {email, password} = request.body;
             let result: IResult = await this.userService.signIn(email, password)
+            logger.info(result.message)
             success(result, response)
         }
         catch(err : any){
+            logger.error(err.message);
             let result = {message: err.message, status: err.status, payload:null}
             error(result, response)
         }
@@ -40,9 +44,11 @@ class UserController {
             const {id} = request.params
             const userObject = request.body;
             let result: IResult = await this.userService.updateProfile(id, userObject)
+            logger.info(result.message)
             success(result, response)
         }
         catch(err: any){
+            logger.error(err.message);
             let result = {message: err.message, status: err.status, payload:null}
             error(result, response)
         }
@@ -55,6 +61,7 @@ class UserController {
             success(result, response)
         }
         catch(err: any){
+            logger.error(err.message);
             let result = {message: err.message, status: err.status, payload:null}
             error(result, response)
         }
@@ -67,6 +74,7 @@ class UserController {
             success(result, response)
         }
         catch(err: any){
+            logger.error(err.message);
             let result = {message: err.message, status: err.status, payload:null}
             error(result, response)
         }
@@ -76,9 +84,11 @@ class UserController {
         try{
             let {id} = request.params;
             let result = await this.userService.getUserById(id)
+            logger.info(result.message)
             success(result, response)
         }
         catch(err: any){
+            logger.error(err.message);
             let result = {message: err.message, status: err.status, payload:null}
             error(result, response)
         }
@@ -89,8 +99,10 @@ class UserController {
             let {id} = request.params;
             let result = await this.userService.deleteUser(id)
             success(result, response)
+            logger.info(result.message)
         }
         catch(err: any){
+            logger.error(err.message);
             let result = {message: err.message, status: err.status, payload:null}
             error(result, response)
         }
@@ -100,9 +112,11 @@ class UserController {
         try{
             let {page, criteria} = request.body;
             let result = await this.userService.getAllUsers(page, criteria)
+            logger.info(result.message)
             success(result, response)
         }
         catch(err: any){
+            logger.error(err.message);
             let result = {message: err.message, status: err.status, payload:null}
             error(result, response)
         }
