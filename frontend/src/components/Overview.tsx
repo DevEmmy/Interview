@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Table from './Table';
 
 import {
@@ -12,6 +12,7 @@ import {
     Legend,
   } from 'chart.js';
   import { Line } from 'react-chartjs-2';
+import { getAllUsers } from '../requests/request';
   // import faker from 'faker';
   
   ChartJS.register(
@@ -59,22 +60,36 @@ import {
   
 
 const Overview = () => {
-    const users: any = [
-        {
-            name: "Emmanuel Olaosebikan",
-            email: "eolaosebikan60@gmail.com"
-        },
-        {
-            name: "Emmanuel Olaosebikan",
-            email: "eolaosebikan60@gmail.com"
-        },
-        {
-          name: "Emmanuel Olaosebikan",
-          email: "eolaosebikan60@gmail.com"
-        }
-    ]
+    // const users: any = [
+    //     {
+    //         name: "Emmanuel Olaosebikan",
+    //         email: "eolaosebikan60@gmail.com"
+    //     },
+    //     {
+    //         name: "Emmanuel Olaosebikan",
+    //         email: "eolaosebikan60@gmail.com"
+    //     },
+    //     {
+    //       name: "Emmanuel Olaosebikan",
+    //       email: "eolaosebikan60@gmail.com"
+    //     }
+    // ]
+    let [users, setUsers] : any = useState([])
 
+    const data1 = {
+      page: 1, 
+      criteria: {email: "Olaosebikan"}
+    }
     
+    const fetchData: any = getAllUsers(data1)
+
+    useEffect(()=>{
+      fetchData.then((resp: any) => {
+        console.log(resp.payload)
+        setUsers(resp.payload)
+      })
+    }, [])
+
   return (
     <div className='w-4/5 px-10'>
         <div className="profile flex items-center justify-end p-5">

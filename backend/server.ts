@@ -9,7 +9,9 @@ const app = express();
 const port = String(process.env.PORT) || 3030;
       
 // Set up your routes and middleware here
-app.use(cors(corsOptions));
+app.use(cors({
+  "origin": "*"
+}));
 app.use(express.urlencoded({limit:"50mb", extended: false}))
 app.use(express.json({limit:"50mb"}))
      

@@ -6,6 +6,7 @@ interface Props{
 }
 
 const Table = (props: Props) => {
+  console.log(props.users)
   return (
     <div className="text-black w-full flex flex-col border rounded-lg p-6">
       <div>
