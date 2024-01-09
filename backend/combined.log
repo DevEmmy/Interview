@@ -216,3 +216,67 @@ info: Sucessful {"service":"user-service","timestamp":"2024-01-08T03:34:30.113Z"
 info: Sucessful {"service":"user-service","timestamp":"2024-01-08T03:34:30.114Z"}
 info: Sucessful {"service":"user-service","timestamp":"2024-01-08T03:34:30.146Z"}
 info: Sucessful {"service":"user-service","timestamp":"2024-01-08T03:34:30.148Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T03:43:00.094Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T03:43:00.096Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T03:43:00.107Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T03:43:00.109Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T03:50:04.076Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T03:50:04.077Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T04:36:28.672Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T04:36:28.680Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T04:36:29.490Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T04:36:29.503Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T21:45:04.317Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T21:45:04.330Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T21:45:05.095Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-08T21:45:05.106Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-08T23:04:36.903Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-08T23:05:03.286Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-08T23:07:22.458Z"}
+info: Signed Up Successfully {"service":"user-service","timestamp":"2024-01-08T23:08:24.360Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-08T23:08:40.797Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-08T23:08:58.093Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-08T23:11:26.861Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-08T23:12:30.808Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-08T23:13:32.066Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-08T23:14:24.618Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-08T23:14:35.307Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-08T23:15:24.154Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T05:04:14.853Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T05:05:18.431Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T05:06:01.977Z"}
+error: Cannot read properties of undefined (reading 'message') {"service":"user-service","timestamp":"2024-01-09T05:06:14.693Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T05:06:57.974Z"}
+error: Cannot read properties of undefined (reading 'message') {"service":"user-service","timestamp":"2024-01-09T05:07:07.848Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T05:35:36.447Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T05:35:36.459Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T05:35:37.217Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T05:35:37.226Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T06:10:56.787Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T06:11:09.690Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T06:12:35.157Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T06:12:43.141Z"}
+info: Signed Up Successfully {"service":"user-service","timestamp":"2024-01-09T06:17:15.450Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T06:17:36.277Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T06:17:56.483Z"}
+info: Signed Up Successfully {"service":"user-service","timestamp":"2024-01-09T06:18:09.522Z"}
+info: Signed Up Successfully {"service":"user-service","timestamp":"2024-01-09T06:26:26.853Z"}
+info: Signed Up Successfully {"service":"user-service","timestamp":"2024-01-09T06:27:17.420Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T06:27:23.189Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T06:27:24.122Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T06:27:24.439Z"}
+info: Signed Up Successfully {"service":"user-service","timestamp":"2024-01-09T06:28:09.336Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T06:29:02.778Z"}
+info: Signed Up Successfully {"service":"user-service","timestamp":"2024-01-09T06:29:13.591Z"}
+info: Signed Up Successfully {"service":"user-service","timestamp":"2024-01-09T06:29:36.431Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T06:32:11.733Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T06:32:11.835Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T06:32:53.126Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T06:32:53.153Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T06:32:59.224Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T06:32:59.439Z"}
+info: undefined {"service":"user-service","timestamp":"2024-01-09T06:37:42.124Z"}
+info: Signed Up Successfully {"service":"user-service","timestamp":"2024-01-09T06:37:47.729Z"}
+info: Signed Up Successfully {"service":"user-service","timestamp":"2024-01-09T06:40:01.522Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T06:40:11.222Z"}
+info: Sucessful {"service":"user-service","timestamp":"2024-01-09T06:40:11.464Z"}

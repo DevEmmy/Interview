@@ -78,7 +78,6 @@ const Overview = () => {
 
     const data1 = {
       page: 1, 
-      criteria: {email: "Olaosebikan"}
     }
     
     const fetchData: any = getAllUsers(data1)

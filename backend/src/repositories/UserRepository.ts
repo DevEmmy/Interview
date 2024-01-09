@@ -17,9 +17,6 @@ class UserRepository{
         return result
     }
 
-    async findOneByUsername(username: string){
-        let result = await this.userModel.findOne({username})
-    }
 
     async findOneByEmail(email: string){
         let result = await this.userModel.findOne({email})

@@ -14,8 +14,8 @@ class UserController {
     async signUp(request: Request, response: Response){
         try{
             
-            let {email, password} = request.body;
-            let result: IResult = await this.userService.signUp(email, password)
+            let data = request.body;
+            let result: IResult = await this.userService.signUp(data)
             logger.info(result.message)
             success(result, response)
         }
@@ -28,8 +28,9 @@ class UserController {
     async signIn(request: Request, response: Response){
         try{
             let {email, password} = request.body;
-            let result: IResult = await this.userService.signIn(email, password)
-            logger.info(result.message)
+            let result: any = await this.userService.signIn(email, password)
+            // console.log(result)
+            // logger.info(result.message)
             success(result, response)
         }
         catch(err : any){

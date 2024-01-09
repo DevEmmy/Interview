@@ -12,9 +12,10 @@ class UserServices{
     constructor(private readonly userRepository : UserRepository
         ){}
 
-    async signUp(email: string, password: string){
+    async signUp(data: any){
         try{
-            let user = {email, password};
+            let {email, password} = data
+            let user: any = data;
             let hashedPassword = await bcrypt.hash(password, 6)
             user.password = hashedPassword
             user = await this.userRepository.save(user)
@@ -38,9 +39,12 @@ class UserServices{
             // change this any to an Interface
             let dbUser: any = await this.userRepository.findOneByEmail(email)
             let hashedPassword = await bcrypt.compare(password, dbUser.password)
+            console.log(dbUser)
             if (hashedPassword){
-                let token = jwt.sign(dbUser, jwtSecret, {expiresIn: "1day"})
-                return{
+
+                let token = jwt.sign({_id: dbUser._id, email}, jwtSecret)
+                console.log(token)
+                return {
                     message: "Signed In Successfully",
                     status: "200",
                     payload: {
@@ -50,6 +54,7 @@ class UserServices{
             }
         }
         catch(err: any){
+            console.log(err)
             return {
                 ...err
             }

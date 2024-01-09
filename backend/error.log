@@ -2,3 +2,5 @@
 {"level":"error","message":"Cannot destructure property 'page' of 'request.body' as it is undefined.","service":"user-service"}
 {"level":"error","message":"this.userService.getAllUsers is not a function","service":"user-service"}
 error: BSON field 'skip' value must be >= 0, actual value '-80' {"service":"user-service","timestamp":"2024-01-08T02:32:44.514Z"}
+error: Cannot read properties of undefined (reading 'message') {"service":"user-service","timestamp":"2024-01-09T05:06:14.693Z"}
+error: Cannot read properties of undefined (reading 'message') {"service":"user-service","timestamp":"2024-01-09T05:07:07.848Z"}

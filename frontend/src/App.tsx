@@ -6,6 +6,9 @@ import {
 } from "react-router-dom"
 import Main from './components/Main';
 import UsersComponent from './components/UsersComponent';
+import Login from './components/Login';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -15,9 +18,10 @@ function App() {
         <Routes>
           <Route path='/'  element={<Main />}/>
           <Route path='/users'  element={<UsersComponent />}/>
-
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
+      <ToastContainer />
     </>
   )
 }
